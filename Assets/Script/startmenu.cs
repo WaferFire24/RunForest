@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class startmenu : MonoBehaviour
 {
-    public void exit()
+    public void ClickExit()
+
     {
         Application.Quit();
     }
 
     public void play(string scene_name)
+    {
+        Application.LoadLevel(scene_name);
+    }
+
+    public void aboutus(string scene_name)
     {
         Application.LoadLevel(scene_name);
     }
