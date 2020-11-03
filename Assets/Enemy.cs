@@ -5,21 +5,34 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health = 100;
+    public int maxHealth = 100;
     AudioSource hitsound;
-
+    public int currentHealth;
+    public HealthBar healthbar;
+    public GameObject player;
     public GameObject deathEffect;
+    Collider2D other;
 
     void Start()
     {
         hitsound = GetComponent<AudioSource>();
+        currentHealth = maxHealth;
+        healthbar.SetMaxHealth(maxHealth);
+    }
+
+    void update()
+    {
+        if(other.gameObject.CompareTag("PLayer")){
+			Destroy (gameObject);
+		}
     }
 
     public void TakeDamage (int damage)
     {
         hitsound.Play();
-        health -= damage;
-        if(health <= damage)
+        currentHealth -= damage;
+        healthbar.SetHealth(currentHealth);
+        if(currentHealth <= damage)
         {
             Die();
         }

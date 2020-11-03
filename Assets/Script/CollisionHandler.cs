@@ -18,5 +18,11 @@ public class CollisionHandler : MonoBehaviour
         if(other.gameObject.CompareTag("Coins")){
 			Destroy (other.gameObject);
 		}
+
+		//got powerup
+		if(other.gameObject.CompareTag("Powerup")){
+			Destroy (other.gameObject);
+			GetComponent<Weapon>().enabled = true;
+		}
 	}
 }

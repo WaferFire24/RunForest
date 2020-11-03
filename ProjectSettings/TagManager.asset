@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coins
   - Water
+  - Powerup
   layers:
   - Default
   - TransparentFX
