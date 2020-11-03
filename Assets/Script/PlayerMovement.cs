@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (GetComponent<Transform>().position.y <= -5f){
-            FindObjectOfType<GameManager>().GameEnded();
+            FindObjectOfType<GameManager>().GameEnded(0);
         }  
     }
 

@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour {
 	
     public static ScoreManager instance;
 	public Text text;
-	int score;
+	[HideInInspector] public static int score;
 
 	void Start () {
 		if (instance == null) {

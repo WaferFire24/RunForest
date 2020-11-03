@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EndSreenMenu.cs" />
      <Compile Include="Assets\Enemy.cs" />
      <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\Blood_Handler.cs" />
      <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Assets.cs" />

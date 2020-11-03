@@ -11,7 +11,7 @@ public class CollisionHandler : MonoBehaviour
 		if (other.gameObject.tag == "Finish") 
 		{   
             GetComponent<PlayerMovement>().enabled = false;
-            FindObjectOfType<GameManager>().GameEnded();
+            FindObjectOfType<GameManager>().GameEnded(1);
 		}
 
         //collect coins
