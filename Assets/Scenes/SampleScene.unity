@@ -148,7 +148,7 @@ RectTransform:
   m_GameObject: {fileID: 481228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1.73145, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1941863906}
   m_RootOrder: 1
@@ -1713,11 +1713,11 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 171
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
